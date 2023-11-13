@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>Form- Text Input</title>
+<meta name = viewport content = width = device-width,initial-scale= 1.0>
+<style>
+    th{text-align: left;
+        background-color: rgba(105, 105, 105, 0.522)
+    }
+    th,td{
+        border: 2px solid;
+        padding: 20px;
+    }
+    table{
+        background-color: rgba(30, 99, 160, 0.501);
+        width:auto;
+        height: auto;
+        align-content:end;
+        color: white;
+    }
+    
+    
+</style>
+</head>
+<body align="center" style="background-color: rgba(152, 29, 29, 0.921);">
+
+<form>
+
+<table align="center"background="D:\website design\image\8.jpeg">
+<tr>
+<th style="text-align: center;" colspan="2"><h2>Personal details:</h2></th>
+</tr>
+<tr>
+<th>First Name:</th>
+<td><input type=text name=fname></td>
+</tr>
+<tr>
+<th>Last Name:</th>
+<td><input type=text name=lname></td>
+</tr>  
+<tr>
+<th>Gender:</th>
+<td><input type = radio name = gender value = Male>Male
+<input type = radio name = gender value = Female>Female</td>
+</tr>
+<tr>
+<th>Choose your favorite subject:<br></th>
+<td><input type = checkbox name = fav_sub value = DCS4103>DCS4103
+<input type = checkbox name = fav_sub value = DCS3003>DCS3003
+<input type = checkbox name = fav_sub value = DCS1003>DCS1003
+<input type = checkbox name = fav_sub value = DCS2003>DCS2003
+</td>
+</tr>
+<tr>
+<th>Address:</th>
+<td><textarea rows=4 cols=30 name=address></textarea></td>
+</tr>
+<tr>
+<th>Date of birth:</th>
+<td><input type=date name=dob></td>
+</tr>
+<tr>
+<th>Login password:</th>
+<td><input type=password name=loginpass></td>
+</tr>
+
+<!-- g part 2 -->
+<tr>
+<th>Course:</th>
+<td><select>
+     <option value="0">-List of Course-</option>
+	<option value="DCS" selected>Diploma In Computer Science</option>
+<! -– g part 3-->
+<optgroup label="Diploma In Computer Science">
+     <option value="DCS_S1">Semester 1</option>   
+     <option value="DCS_S2">Semester 2</option> 
+     <option value="DCS_S3">Semester 3</option>
+     <option value="DCS_S4">Semester 4</option> 
+     <option value="DCS_S5">Semester 5</option>
+     <option value="DCS_S6">Semester 6</option>  
+     </optgroup>
+
+     <option value="DIB">Diploma In Bussiness</option>
+     <option value="DAS">Diploma In Airline Services</option>
+</select>
+<tr>
+<th style="text-align: center;"  colspan="2"><input type=submit value=Submit>
+<input type=reset value=Reset></th>
+</tr>
+</form>
+</table>
+
+
+
+</body>
+</html>
