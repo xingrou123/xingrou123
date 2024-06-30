@@ -113,7 +113,7 @@ function preload() {
             game.load_map(map);
             game.limit_viewport = true; 
             // background(0);
-            // noStroke();
+            noStroke();
             bgSound.loop();
         }
 
