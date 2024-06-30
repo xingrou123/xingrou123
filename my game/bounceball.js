@@ -1,8 +1,9 @@
  let img;
-
+ let bgSound;
 
 function preload() {
     img = loadImage('diamond.png'); 
+    bgSound = loadSound('Pokemon RubySapphireEmerald- Littleroot Town.mp3');
 }
  let map = {
             tile_size: 16.5,
@@ -113,6 +114,7 @@ function preload() {
             game.limit_viewport = true; 
             // background(0);
             noStroke();
+            bgSound.loop();
         }
 
         function draw() {
