@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project.com</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      body, html {
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          height: 100%;
+          font-family: 'Roboto', sans-serif;
+          background:url('https://i.pinimg.com/originals/4b/26/1f/4b261f5fe2a4dbb63e7db5a40622dc99.gif')no-repeat center center/cover;
+          /* background-color:#6E6C65; */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+      }
+      #start-screen {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          width: 100%;
+          background: url('back.jpg') no-repeat center center/cover; /* Updated background image */
+          position: relative;
+      }
+      
+      
+      
+      #start-button {
+          padding: 30px 60px;
+          margin-bottom: 20px;
+          font-size: 30px;
+          background-color: #353235c5;
+          border: none;
+          border-radius: 50px;
+          color: #fff;
+          cursor: pointer;
+          transition: background-color 0.3s, transform 0.3s;
+          box-shadow: 0 0 20px #afacba, 0 0 30px #72727b, 0 0 40px #72728d, 0 0 50px #b3a5b3;
+      }
+      #start-button:hover {
+          background-color: #6363ba52;
+          transform: scale(1.05);
+      }
+      p {
+          margin-top: 30px;
+          font-size: 18px;
+          color: #fff;
+          text-align: center;
+          text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff;
+      }
+      #game-container {
+          display: none;
+            width: 800px;
+            height: 1000px;
+            justify-content: center;
+            align-items: center;
+        }
+      
+    
+
+  </style>
+</head>
+<body>
+    <div id="start-screen">
+        <button id="start-button">Start Game</button>
+        <p>Use the left, right, and up arrow keys to move.</p>
+    </div>
+    <div id="game-container">
+        <canvas id="game-canvas"></canvas>
+    </div>
+
+
+    <script src="../libraries/p5.min.js" type="text/javascript"></script>
+    <script src="../libraries/p5.sound.min.js" type="text/javascript"></script>
+    <script src="bounceball.js"></script>
+   
+</body>
+</html>
