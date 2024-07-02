@@ -107,6 +107,7 @@ function preload() {
 
         function setup() {
             let myCanvas = createCanvas(1280, 720);
+            frameRate(100);
             myCanvas.parent('game-container');
             game = new Clarity();
             game.set_viewport(width, height);
